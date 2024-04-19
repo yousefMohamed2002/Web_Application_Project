@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logo.png" type="image/png">
+    <title>YAKMG Community</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+        }
+
+            header .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            header .logo-container {
+                display: flex;
+                align-items: center;
+            }
+
+            header .logo {
+                width: 70px;
+                height: 70px;
+                margin-right: 10px;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+                margin-top: 10px;
+                position: relative;
+                z-index: 1;
+            }
+
+        nav ul {
+            list-style: none;
+        }
+
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            z-index: 1;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #f00;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn:hover {
+                background-color: #d00;
+            }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        /* Contact section */
+        .contact-section {
+            background-image: url('background.jpg');
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .contact-form textarea {
+                resize: vertical;
+                height: 150px;
+            }
+
+            .contact-form input[type="submit"] {
+                background-color: #f00;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+                .contact-form input[type="submit"]:hover {
+                    background-color: #d00;
+                }
+
+        /* About section */
+        .about-section {
+            background-color: black;
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+            .about-section .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .about-section h2 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+
+            .about-section p {
+                font-size: 1.1em;
+                line-height: 1.6;
+                margin-bottom: 30px;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img class="logo" src="Logo.png" alt="Logo">
+                <h1>YAKMG Gaming Community</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="Home">
+        <video class="hero-video" autoplay muted loop>
+            <source src="Video/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container hero-content">
+            <h2>Welcome to Our Gaming Community!</h2>
+            <p>Connect with fellow gamers, join discussions, and explore exciting games.</p>
+            <div class="buttons">
+                <a href="Login.aspx" class="btn">Login</a>
+                <a href="SignUp.aspx" class="btn">Sign Up</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="About">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Welcome to our vibrant game community! Here, players from all corners of the globe unite in their passion for gaming, forming an inclusive and dynamic hub where camaraderie and competition thrive. From seasoned veterans to curious newcomers, everyone is welcomed with open arms, ready to embark on epic adventures together. Our community is not just about pixels and polygons; it's about forging lasting friendships, sharing memorable moments, and celebrating the diverse tapestry of gaming experiences. Whether you're delving into fantastical realms, strategizing in intense battles, or exploring vast open worlds, you'll find a home here among fellow enthusiasts who share your love for gaming. Join us and let's continue to make gaming history together!
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-section" id="Contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gaming Community. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
