@@ -214,22 +214,22 @@
                     <td class="auto-style2"></td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2">
                         <asp:Label ID="Label11" runat="server" Text="Upload Photo :"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style2">
                         <asp:FileUpload ID="upload" runat="server" />
                     </td>
-                    <td>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    <td class="auto-style2">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000" ControlToValidate="Gender"></asp:RequiredFieldValidator>
                     </td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
+                    <td class="auto-style2"></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
