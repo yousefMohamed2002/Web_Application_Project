@@ -76,6 +76,7 @@
     <Content Include="bin\Web_Application_Project.pdb" />
     <Content Include="Home.html" />
     <Content Include="Login.aspx" />
+    <Content Include="MemberHome.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="Logo.png" />
     <Content Include="Video\video.mp4" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MemberHome.aspx.cs">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MemberHome.aspx.designer.cs">
+      <DependentUpon>MemberHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignUp.aspx.cs">
