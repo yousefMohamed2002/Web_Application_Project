@@ -43,7 +43,9 @@
                     <td>
                         <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="UserName" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -59,7 +61,9 @@
                     <td>
                         <asp:TextBox ID="FName" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="FName" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -75,7 +79,9 @@
                     <td>
                         <asp:TextBox ID="LName" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="LName" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -94,7 +100,9 @@
                             <asp:ListItem>F</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="Gender" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -110,7 +118,9 @@
                     <td>
                         <asp:TextBox ID="Email" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="Email" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -126,7 +136,9 @@
                     <td>
                         <asp:TextBox ID="Phone" runat="server"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="Phone" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -153,7 +165,9 @@
                             <asp:ListItem> Palestinian</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style2">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="Country" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -169,7 +183,9 @@
                     <td>
                         <asp:TextBox ID="Password" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="Password" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
@@ -185,8 +201,12 @@
                     <td class="auto-style2">
                         <asp:TextBox ID="RePassword" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
-                    <td class="auto-style2"></td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style2">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="RePassword" ErrorMessage=" This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style2">
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="Password" ControlToValidate="RePassword" ErrorMessage="RePassword Not Matched" Font-Bold="True" ForeColor="#CC0000"></asp:CompareValidator>
+                    </td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
                     <td class="auto-style2"></td>
@@ -201,7 +221,9 @@
                     <td>
                         <asp:FileUpload ID="upload" runat="server" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="This Field Is Required" Font-Bold="True" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+                    </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
